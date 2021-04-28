@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_star"
+            android:title="@string/fav" />
+        <item
+            android:icon="@drawable/ic_baseline_turned_in_24"
+            android:title="@string/bookmarks" />
+        <item
+            android:icon="@drawable/ic_baseline_mail_24"
+            android:title="@string/send_feedback" />
+        <item
+            android:icon="@drawable/ic_baseline_rate_review_24"
+            android:title="@string/rate_the_app" />
+        <item
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/settings" />
+    </group>
+</menu>

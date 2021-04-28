@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aquib.cricketscore.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_video_library"
+            app:destination="@id/video_library" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/video_library"
+        android:name="com.aquib.cricketscore.Fragment.VideoLibraryFragment"
+        android:label="fragment_video_library"
+        tools:layout="@layout/fragment_video_library" >
+        <action
+            android:id="@+id/action_video_library_to_matches"
+            app:destination="@id/matches" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/matches"
+        android:name="com.aquib.cricketscore.Fragment.MatchesFragment"
+        android:label="fragment_matches"
+        tools:layout="@layout/fragment_matches" >
+        <action
+            android:id="@+id/action_matches_to_FavouritesFragment"
+            app:destination="@id/FavouritesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FavouritesFragment"
+        android:name="com.aquib.cricketscore.Fragment.FavouritesFragment"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_favourites" />
+
+</navigation>
